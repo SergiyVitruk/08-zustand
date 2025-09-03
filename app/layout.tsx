@@ -15,7 +15,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: 'NoteHUB',
   description: 'Create your own digital notebook',
-  metadataBase: new URL('https://notehub.com'),
+  metadataBase: new URL('https://08-zustand-eight-phi.vercel.app'),
   openGraph: {
     title: 'NoteHUB',
     description: 'Create your own digital notebook',
