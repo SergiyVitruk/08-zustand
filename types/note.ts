@@ -8,3 +8,4 @@ export interface Note {
 }
 
 export type NoteTag = 'Work' | 'Personal' | 'Meeting' | 'Shopping' | 'Todo';
+ 

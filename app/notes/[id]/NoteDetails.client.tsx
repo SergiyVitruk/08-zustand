@@ -34,7 +34,9 @@ const NoteDetailsClient = () => {
   return (
     <div className={css.container}>
       <div className={css.item}>
-        <button onClick={handleGoBack}>Back</button>
+        <button onClick={handleGoBack} className={css.backBtn}>
+          Back
+        </button>
         <div className={css.header}>
           <h2>{note.title}</h2>
         </div>
