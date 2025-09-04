@@ -21,6 +21,8 @@ export interface FetchNotesParams {
   tag?: NoteTag;
 }
 
+export type NoteCreateData = Pick<Note, 'title' | 'content' | 'tag'>;
+
 export const fetchNotes = async (
   params: FetchNotesParams
 ): Promise<FetchNotesResponse> => {
@@ -37,9 +39,7 @@ export const fetchNoteById = async (id: string): Promise<Note> => {
   return response.data;
 };
 
-export const createNote = async (
-  noteData: Pick<Note, 'title' | 'content' | 'tag'>
-): Promise<Note> => {
+export const createNote = async (noteData: NoteCreateData): Promise<Note> => {
   const response = await axios.post<Note>('notes/', noteData, {
     headers,
   });
